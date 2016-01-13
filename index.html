@@ -8,6 +8,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>code-Ed</title>
+		 <link rel="stylesheet" href="css/animate.min.css">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -26,20 +27,20 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1><a href="index.html">code-Ed</a></h1>
+				<h1><a href="index.html" id="code-Ed">code-Ed</a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html">Philanthropy</a></li>
-						<li><a href="elements.html">Teaching</a></li>
-						<li><a href="#" class="button special">Projects</a></li>
+						<li><a href="index.html" class="navigation">Home</a></li>
+						<li><a href="generic.html" class="navigation">Philanthropy</a></li>
+						<li><a href="elements.html" class="navigation">Teaching</a></li>
+						<li><a href="#" class="button special" class="navigation">Projects</a></li>
 					</ul>
 				</nav>
 			</header>
 
 		<!-- Banner -->
 			<section id="banner">
-				<h2>code-Ed</h2>
+				<h2 id="main">code-Ed</h2>
 				
 				<ul class="actions">
 					<li>
@@ -115,6 +116,12 @@
 					</div>
 				</div>
 			</footer>
+			<script>
+			$('#code-Ed').addClass('animated bounceInLeft');
+			$('.navigation').addClass('animated bounceInLeft');
+			$('#main').addClass('animated flipInX');
+			
+			</script>
 
 	</body>
 </html>
